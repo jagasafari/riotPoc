@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Riot Poc</title>
+    </head>
+    <body>
+        <todo></todo>
+        <hello-world></hello-world>
+        <app></app>
+        <script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
+        <script src="./Tags/todo.tag" type="riot/tag"></script>
+        <script src="./Tags/hello-world.tag" type="riot/tag"></script> 
+        <script src="./Tags/app.tag" type="riot/tag"></script> 
+        <script>riot.mount('todo', { title: 'todo title' })</script>
+        <script>riot.mount('hello-world', { greeting: 'hello' })</script>
+        <script>riot.mount('app')</script>
+    </body>
+</html>
